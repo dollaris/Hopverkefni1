@@ -10,17 +10,11 @@
 }
 
 .button-2 {
-    display: inline-flex;
-    align-items: flex-start;
-    top: 356px;
-    left: 1px;
-    background-color: #6f4e37;
-    border-color: #3c2a1e;
-    gap: 10px;
+    display: flex;
+    justify-content: center;
     padding: 10px 15px;
+    align-self: stretch;
     border-radius: 5px;
-    overflow: hidden;
-    border: 1px solid;
-    all: unset;
-    box-sizing: border-box;
+    border: 1px solid #6F4E37;
+    background: #FEFEFE;
 }
