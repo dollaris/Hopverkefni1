@@ -1,0 +1,33 @@
+.hver-vika {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    height: 520px;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.text {
+    display: inline-flex;
+    padding: 120px 16px 120px 254px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+
+}
+
+.photo {
+    top: 120px;
+    left: 733px;
+    width: 450px;
+    height: 274px;
+    background-color: #682c2c;
+}
+
+.img {
+    width: 450px;
+    height: 274px;
+    object-fit: cover;
+}

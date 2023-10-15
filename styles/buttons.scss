@@ -1,0 +1,26 @@
+.button {
+    color: #FFF;
+    padding: 10px 15px;
+    font-weight: 700;
+
+    line-height: 24px;
+    border-radius: 5px;
+    border: 1px solid #3C2A1E;
+    background: #6F4E37;
+}
+
+.button-2 {
+    display: inline-flex;
+    align-items: flex-start;
+    top: 356px;
+    left: 1px;
+    background-color: #6f4e37;
+    border-color: #3c2a1e;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid;
+    all: unset;
+    box-sizing: border-box;
+}

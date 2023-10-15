@@ -1,0 +1,35 @@
+{
+  "name": "hopverkefni1",
+  "version": "1.0.0",
+  "description": "Hópverkefni í Vefforritun 1 haust 2023",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "sass": "sass styles.scss styles.css -w",
+    "lint": "stylelint styles.scss --syntax scss",
+    "dev": "concurrently \"npm run sass && npm run lint\" \"npm run browser-sync\" && open ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dollaris/Hopverkefni1.git"
+  },
+  "keywords": [
+    "1337"
+  ],
+  "author": "Stimmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dollaris/Hopverkefni1/issues"
+  },
+  "homepage": "https://github.com/dollaris/Hopverkefni1#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "concurrently": "^8.2.1",
+    "stylelint": "^15.10.3",
+    "stylelint-config-primer": "^11.1.1"
+  },
+  "dependencies": {
+    "sass": "^1.69.3"
+  }
+}
