@@ -1,12 +1,17 @@
 .button {
-    color: #FFF;
     padding: 10px 15px;
-    font-weight: 700;
 
-    line-height: 24px;
     border-radius: 5px;
     border: 1px solid #3C2A1E;
+
     background: #6F4E37;
+    color: #FFF;
+
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
 }
 
 .button-2 {
@@ -14,7 +19,16 @@
     justify-content: center;
     padding: 10px 15px;
     align-self: stretch;
+
     border-radius: 5px;
     border: 1px solid #6F4E37;
+
     background: #FEFEFE;
+    color: #3C2A1E;
+
+    font-family: var(--body-font-family);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
 }

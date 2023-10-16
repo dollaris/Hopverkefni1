@@ -8,7 +8,7 @@
     z-index: 3;
 }
 
-.nav-container{
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +29,7 @@
 }
 
 .logo-text {
-    font-family: 'Lora', sans-serif;
+    font-family: var(--body-font-family);
     font-size: 24px;
     font-weight: 700;
     color: #000;
@@ -52,11 +52,24 @@
     padding: 5px;
     border: 1px solid #000;
     border-radius: 5px;
+    font-family: var(--body-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .categories {
     display: flex;
-    gap: 20px;
+    width: 330px;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--body-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .cart {
@@ -94,15 +107,6 @@
 .label .text-wrapper {
     display: flex;
     position: absolute;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-self: flex-end;
-    text-align: end;
 
-    font-family: var(--body-font-family);
-    font-weight: var(--body-font-weight);
-    font-style: var(--body-font-style);
-    font-size: var(--body-font-size);
-    letter-spacing: var(--body-letter-spacing);
     color: #fefefe;
 }

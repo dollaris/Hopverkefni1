@@ -20,7 +20,7 @@ html {
   font-family: "Lora";
   font-style: normal;
   font-display: swap;
-  src: url(./fonts/Lora-VariableFont_wght.ttf) format("woff");
+  src: url(../fonts/Lora-VariableFont_wght.ttf) format("woff");
 }
 :root {
   --body-font-family: "Lato-Regular", Helvetica;
@@ -94,13 +94,26 @@ h3 {
   font-family: var(--font-family-heading);
 }
 
+p {
+  color: #000;
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+strong {
+  font-weight: 700;
+}
+
 a {
   color: inherit;
   background-color: inherit;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .navigation {
@@ -134,7 +147,7 @@ img {
 }
 
 .logo-text {
-  font-family: "Lora", sans-serif;
+  font-family: var(--body-font-family);
   font-size: 24px;
   font-weight: 700;
   color: #000;
@@ -157,11 +170,24 @@ img {
   padding: 5px;
   border: 1px solid #000;
   border-radius: 5px;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .categories {
   display: flex;
-  gap: 20px;
+  width: 330px;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .cart {
@@ -198,15 +224,6 @@ img {
 .label .text-wrapper {
   display: flex;
   position: absolute;
-  justify-content: flex-end;
-  align-items: flex-end;
-  align-self: flex-end;
-  text-align: end;
-  font-family: var(--body-font-family);
-  font-weight: var(--body-font-weight);
-  font-style: var(--body-font-style);
-  font-size: var(--body-font-size);
-  letter-spacing: var(--body-letter-spacing);
   color: #fefefe;
 }
 
@@ -238,7 +255,7 @@ img {
 .tilbod {
   color: #000;
   text-align: center;
-  font-family: Lato;
+  font-family: var(--body-font-family);
   font-size: 160px;
   font-style: normal;
   font-weight: 700;
@@ -247,13 +264,18 @@ img {
 .slagord {
   color: #000;
   text-align: center;
-  font-family: Lato;
+  font-family: var(--body-font-family);
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
   line-height: 48px;
 }
 
+@media only screen and (max-width: 950px) {
+  .tilbod {
+    font-size: 80px;
+  }
+}
 .section1 {
   display: flex;
   flex-direction: row;
@@ -262,6 +284,13 @@ img {
   width: 100%;
   height: 520px;
   gap: 30px;
+}
+
+.s-container1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 20px 0 20px 0;
 }
 
 .text {
@@ -304,7 +333,6 @@ img {
 
 .s-container2 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
   max-width: 1400px;
@@ -316,7 +344,20 @@ img {
   width: 1000px;
   margin: 10px auto;
   color: #000;
-  font-family: Lato;
+  font-family: var(--body-font-family);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.s-title2 {
+  display: flex;
+  align-self: flex-start;
+  width: 1000px;
+  margin: 10px auto;
+  color: #000;
+  font-family: var(--body-font-family);
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -333,22 +374,20 @@ img {
 }
 
 .product-card {
+  display: flex;
   width: 330px;
   height: 360px;
   padding: 15px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  overflow: hidden;
-  display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
   align-items: center;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
 
 .product-image {
   width: 310px;
   height: 160px;
-  gap: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -358,6 +397,12 @@ img {
   align-self: stretch;
   width: 100%;
   height: 32px;
+  color: #000;
+  font-family: var(--body-font-family);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
 }
 
 .tags {
@@ -378,12 +423,25 @@ img {
   background-color: #e1cec2;
   border-radius: 5px;
   overflow: hidden;
+  color: #000;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 .price {
   align-self: stretch;
   width: 100%;
   height: 24px;
+  color: #000;
+  /* Body */
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .section3 {
@@ -400,28 +458,53 @@ img {
 
 @media screen and (max-width: 1420px) {
   .section2 {
-    padding: 50px 0 50px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    padding: 50px;
+    height: 1000px;
     background-color: var(--coffee-with-milk);
     gap: 30px;
     clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
   }
+  .s-title2 {
+    justify-content: center;
+    width: 100%;
+  }
+  .section3 {
+    padding-top: 30px;
+    height: 1000px;
+    background-color: var(--coffee-with-milk);
+    gap: 30px;
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+  }
   .products {
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    width: 0px;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 950px) {
+  .section1 {
+    height: 100%;
+  }
+  .s-container1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 729px) {
   .products {
     grid-template-columns: repeat(1, 1fr);
   }
+  .product-card {
+    height: 360px;
+    width: 470px;
+  }
+  .product-photo {
+    width: 440px;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
   .section2 {
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .section3 {
     clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
@@ -437,7 +520,7 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 270px;
+  height: 100%;
   background-color: #3c2a1e;
   color: var(--coffee-with-milk);
   gap: 30px;
@@ -461,9 +544,9 @@ img {
   display: flex;
   flex-direction: column;
   width: 350px;
-  height: 154px;
+  height: 100%;
   color: #FFF;
-  font-family: Lato;
+  font-family: var(--body-font-family);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -475,9 +558,9 @@ img {
   display: flex;
   flex-direction: column;
   width: 350px;
-  height: 154px;
+  height: 100%;
   color: #FFF;
-  font-family: Lato;
+  font-family: var(--body-font-family);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -489,9 +572,9 @@ img {
   display: flex;
   flex-direction: column;
   width: 350px;
-  height: 154px;
+  height: 100%;
   color: #FFF;
-  font-family: Lato;
+  font-family: var(--body-font-family);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -508,21 +591,43 @@ img {
   border-top: 1px solid var(--coffee-with-milk);
   color: #FFF;
   text-align: center;
-  font-family: Lato;
+  font-family: var(--body-font-family);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
 }
 
+@media screen and (max-width: 1110px) {
+  .footer-container {
+    display: flex;
+    flex-shrink: 2;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 30px;
+  }
+  .copyright {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 729px) {
+  .footer {
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
 .button {
-  color: #FFF;
   padding: 10px 15px;
-  font-weight: 700;
-  line-height: 24px;
   border-radius: 5px;
   border: 1px solid #3C2A1E;
   background: #6F4E37;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .button-2 {
@@ -533,6 +638,12 @@ img {
   border-radius: 5px;
   border: 1px solid #6F4E37;
   background: #FEFEFE;
+  color: #3C2A1E;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */
