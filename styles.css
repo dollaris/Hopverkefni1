@@ -162,6 +162,7 @@ img {
 .vector {
   position: absolute;
   right: 10px;
+  width: auto;
 }
 
 .search-input {
