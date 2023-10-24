@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -21,23 +20,45 @@
                     </input>
                 </div>
                 <div class="categories">
-                    <div class="nav-links">Nýjar vörur</div>
-                    <div class="nav-links">Tilboðs vörur</div>
-                    <div class="nav-links">Allar vörur</div>
+                    <div class="nav-links"><a href="./pages/vorulisti.html">Nýjar vörur</a></div>
+                    <div class="nav-links"><a href="./pages/vara.html"></a>Tilboðs vörur</div>
+                    <div class="nav-links"><a href="./pages/pontunarsida.html"></a>Allar vörur</div>
                 </div>
             </div>
             <div class="cart">
-                <img class="cart-icon" src="img/cart-icon.svg" />
-                <div class="cart-count"></div>
-                <div class="label">
-                    <div class="text-wrapper">1</div>
-                </div>
+                <a href="./pages/pontunarsida.html">
+                    <img class="cart-icon" src="img/cart-icon.svg" />
+                    <div class="cart-count"></div>
+                    <div class="label">
+                        <div class="text-wrapper">1</div>
+                    </div>
+                </a>
             </div>
+
+            <input type="checkbox" class="check">
+            <ul class="menu-items">
+                <div class="dropdown-links">
+                <li><a href="./pages/vorulisti.html">Nýjar vörur</a></li>
+                <li><a href="./pages/vara.html">Tilboðs vörur</a></li>
+                <li><a href="./pages/pontunarsida.html">Allar vörur</a></li>
+                </div>
+                <div class="dropdown-search">
+                    <div class="search-categories-drop">
+                        <div class="search-drop">
+                            <img class="vector" src="img/vector.svg" />
+                            <input class="search-input-drop" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl.">
+                            </input>
+                        </div>
+                    </div>
+                </div> 
+            </ul>
             <div class="hamburger">
                 <span class="burger1"></span>
                 <span class="burger2"></span>
                 <span class="burger3"></span>
             </div>
+        </input>
+            
         </nav>
     </div>
     <!-- nav endar -->
@@ -223,7 +244,7 @@
     <div class="pink">
         <footer class="footer">
             <div class="footer-container">
-                <div class="opening-hours">
+                <div class="info">
                     <div class="footer-title">OPNUNARTÍMI</div>
                     <p>
                         Opið alla virka daga frá 9:00–18:00<br />
@@ -232,7 +253,7 @@
                     </p>
                 </div>
 
-                <div class="contact">
+                <div class="info">
                     <div class="footer-title">HAFÐU SAMBAND</div>
                     <p>
                         Skiptiborð: 234–4568<br />
@@ -240,7 +261,7 @@
                     </p>
                 </div>
 
-                <div class="other">
+                <div class="info">
                     <div class="footer-title">ANNAÐ</div>
                     <p>
                         Rekja sendingu<br />
