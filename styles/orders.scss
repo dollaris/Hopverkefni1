@@ -1,0 +1,202 @@
+.pntunar-container {
+    display: flex;
+    flex-direction: column;
+    padding: 90px 15px 30px 15px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.pntunar-title {
+    padding-bottom: 10px;
+    font-family: "Lato-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 60px;
+    letter-spacing: 0;
+    line-height: 80px;
+    white-space: nowrap;
+}
+
+.box-container {
+    display: flex;
+    padding-bottom: 60px;
+    gap: 30px;
+}
+
+.order-title {
+    font-family: var(--secondary-heading-font-family);
+    font-weight: var(--secondary-heading-font-weight);
+    color: #000000;
+    font-size: var(--secondary-heading-font-size);
+    letter-spacing: var(--secondary-heading-letter-spacing);
+    line-height: var(--secondary-heading-line-height);
+    font-style: var(--secondary-heading-font-style);
+}
+
+.kaupandi {
+    padding-bottom: 30px;
+}
+
+.order-text {
+    font-family: var(--large-body-font-family);
+    font-weight: var(--large-body-font-weight);
+    color: #000000;
+    font-size: var(--large-body-font-size);
+    letter-spacing: var(--large-body-letter-spacing);
+    line-height: var(--large-body-line-height);
+    white-space: nowrap;
+    font-style: var(--large-body-font-style);
+}
+
+.div-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 20px 0 20px 0;
+}
+
+.input-field {
+    width: 329px;
+    height: 40px;
+
+    background-color: #fefefe;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.pntunar-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.pntunar-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.karfa {
+    display: flex;
+    flex-direction: column;
+}
+
+.karfa-products {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.karfa-products .karfa-product {
+    gap: 30px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.karfa-products .karfa-product-image {
+    flex-direction: column;
+    width: 90px;
+    height: 84px;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.karfa-product-img {
+    width: 90px;
+    height: 84px;
+    margin-top: -35px;
+    margin-bottom: -35px;
+    object-fit: cover;
+}
+
+.karfa-title {
+    width: 100%;
+    align-items: flex-start;
+    display: flex;
+    align-self: center;
+}
+
+.karfa-products .text-wrapper {
+    position: relative;
+    width: fit-content;
+
+    font-family: var(--card-heading-font-family);
+    font-weight: var(--card-heading-font-weight);
+    color: #000000;
+    font-size: var(--card-heading-font-size);
+    letter-spacing: var(--card-heading-letter-spacing);
+    line-height: var(--card-heading-line-height);
+    white-space: nowrap;
+    font-style: var(--card-heading-font-style);
+}
+
+.karfa-products .div-wrapper {
+    width: 210px;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+
+    font-family: var(--card-heading-font-family);
+    font-weight: var(--card-heading-font-weight);
+    color: #000000;
+    font-size: var(--card-heading-font-size);
+    letter-spacing: var(--card-heading-letter-spacing);
+    line-height: var(--card-heading-line-height);
+    white-space: nowrap;
+    font-style: var(--card-heading-font-style);
+}
+
+.karfa-products .line {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 1px;
+    border: 1px solid;
+    border-color: #e1cec2;
+}
+
+.karfa-products .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+
+    font-family: "Lato-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: 32px;
+    white-space: nowrap;
+}
+
+.karfa-products .div {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Lato-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: 32px;
+    white-space: nowrap;
+}
+
+.pntunar-order {
+    padding-bottom: 50px;
+}

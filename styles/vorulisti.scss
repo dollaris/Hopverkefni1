@@ -1,0 +1,41 @@
+.voru-header{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+
+    margin: 0 auto;
+    padding: 90px 0 30px 15px;
+}
+
+.new-product{
+    width: 1404px;
+    top: 0;
+    left: 0;
+    font-family: "Lato-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 60px;
+    letter-spacing: 0;
+    line-height: 80px;
+    white-space: nowrap;
+}
+
+.organize{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0%;
+}
+
+.organize-title{
+    width: 1410px;
+    top: 0;
+    left: 0;
+    font-family: var(--secondary-heading-font-family);
+    font-weight: var(--secondary-heading-font-weight);
+    color: #000000;
+    font-size: var(--secondary-heading-font-size);
+    letter-spacing: var(--secondary-heading-letter-spacing);
+    line-height: var(--secondary-heading-line-height);
+    font-style: var(--secondary-heading-font-style); 
+}

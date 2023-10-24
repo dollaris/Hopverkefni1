@@ -37,6 +37,7 @@
 }
 
 .slagord {
+    width: 500px;
     color: #000;
     text-align: center;
 
@@ -50,5 +51,13 @@
 @media only screen and (max-width: 950px) {
     .tilbod {
         font-size: 80px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 550px) {
+    .header{
+        height: 322px;
     }
 }
